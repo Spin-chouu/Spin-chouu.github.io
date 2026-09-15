@@ -49,18 +49,25 @@
       </button>
 
       <nav class="nav">
-        <a href="#a-propos">À propos</a>
-        <a href="#projets">Projets</a>
-        <a href="#competences">Compétences</a>
-        <a href="#contact">Contact</a>
+        <a href="#a-propos" data-i18n="nav.about">À propos</a>
+        <a href="#projets" data-i18n="nav.projects">Projets</a>
+        <a href="#competences" data-i18n="nav.skills">Compétences</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+
+        <div class="language-switch" aria-label="Choisir la langue">
+          <button type="button" class="language-button active" data-language="fr" aria-pressed="true">FR</button>
+          <span class="language-separator">/</span>
+          <button type="button" class="language-button" data-language="en" aria-pressed="false">EN</button>
+        </div>
 
         <a
           class="nav-linkedin"
           href="https://www.linkedin.com/in/salah-djessas-51b4993a9"
           target="_blank"
           rel="noopener noreferrer"
+          data-i18n="nav.linkedin"
         >
-          LinkedIn
+          Linkedin
           <span class="external-arrow">↗</span>
         </a>
       </nav>
@@ -86,20 +93,20 @@
 
           <div class="status-badge">
             <span class="status-dot"></span>
-            Data · IA · Machine Learning · Computer Vision
+            <span data-i18n="hero.badge">Data · IA · Machine Learning · Computer Vision</span>
           </div>
 
-          <p class="hero-kicker">
+          <p class="hero-kicker" data-i18n="hero.kicker">
             PORTFOLIO — SALAH DJESSAS
           </p>
 
-          <h1>
+          <h1 data-i18n-html="hero.title">
             Transformer les
             <span class="gradient-text">données</span>
             en décisions utiles.
           </h1>
 
-          <p class="hero-description">
+          <p class="hero-description" data-i18n-html="hero.description">
             Je conçois des solutions intelligentes à partir de données,
             en combinant <strong>Data Science</strong>,
             <strong>Machine Learning</strong>,
@@ -109,7 +116,7 @@
 
           <div class="hero-actions">
 
-            <a href="#projets" class="btn btn-primary">
+            <a href="#projets" class="btn btn-primary" data-i18n-html="hero.cta.projects">
               Découvrir mes projets
               <span>↓</span>
             </a>
@@ -119,30 +126,12 @@
               target="_blank"
               rel="noopener noreferrer"
               class="btn btn-linkedin"
+              data-i18n-html="hero.cta.linkedin"
             >
               <span class="linkedin-icon">in</span>
-              Mon LinkedIn
+              Mon Linkedin
               <span>↗</span>
             </a>
-
-          </div>
-
-          <div class="hero-meta">
-
-            <div>
-              <strong>5</strong>
-              <span>Expériences & projets</span>
-            </div>
-
-            <div>
-              <strong>IA</strong>
-              <span>Machine Learning</span>
-            </div>
-
-            <div>
-              <strong>CV</strong>
-              <span>Vision par ordinateur</span>
-            </div>
 
           </div>
 
@@ -246,7 +235,7 @@
 
       <div class="scroll-indicator">
         <span></span>
-        <p>Scroll pour explorer</p>
+        <p data-i18n="hero.scroll">Scroll pour explorer</p>
       </div>
 
     </section>
@@ -262,14 +251,14 @@
 
         <div class="section-heading reveal">
 
-          <p class="eyebrow">01 — À PROPOS</p>
+          <p class="eyebrow" data-i18n="about.eyebrow">01 — À PROPOS</p>
 
-          <h2>
+          <h2 data-i18n-html="about.title">
             Une approche à la croisée de
             <span class="gradient-text">l'IA et du logiciel.</span>
           </h2>
 
-          <p>
+          <p data-i18n="about.subtitle">
             Mon parcours combine développement logiciel, Data Science,
             Machine Learning et vision par ordinateur avec une approche
             orientée vers la conception de solutions concrètes.
@@ -282,21 +271,21 @@
 
           <div class="about-main reveal">
 
-            <p>
+            <p data-i18n="about.p1">
               À travers mes expériences et projets, j'ai travaillé sur des
               problématiques allant de l'analyse et la préparation de données
               jusqu'à la conception de modèles prédictifs et de systèmes
               intelligents.
             </p>
 
-            <p>
+            <p data-i18n-html="about.p2">
               Mes travaux couvrent notamment la <strong>détection d'événements
               à partir de flux vidéo</strong>, la <strong>modélisation
               prédictive</strong>, la <strong>recherche documentaire</strong>
               et le <strong>développement d'applications web</strong>.
             </p>
 
-            <p>
+            <p data-i18n="about.p3">
               L'objectif est toujours le même : transformer une problématique
               métier ou opérationnelle en une solution exploitable,
               mesurable et compréhensible.
@@ -310,32 +299,32 @@
             <div class="fact-card">
               <span class="fact-number">01</span>
               <div>
-                <strong>Data Science</strong>
-                <p>Analyse, préparation et valorisation des données.</p>
+                <strong data-i18n="about.fact1.title">Data Science</strong>
+                <p data-i18n="about.fact1.desc">Analyse, préparation et valorisation des données.</p>
               </div>
             </div>
 
             <div class="fact-card">
               <span class="fact-number">02</span>
               <div>
-                <strong>Machine Learning</strong>
-                <p>Modélisation prédictive et évaluation des modèles.</p>
+                <strong data-i18n="about.fact2.title">Machine Learning</strong>
+                <p data-i18n="about.fact2.desc">Modélisation prédictive et évaluation des modèles.</p>
               </div>
             </div>
 
             <div class="fact-card">
               <span class="fact-number">03</span>
               <div>
-                <strong>Computer Vision</strong>
-                <p>Analyse de données visuelles et flux vidéo.</p>
+                <strong data-i18n="about.fact3.title">Computer Vision</strong>
+                <p data-i18n="about.fact3.desc">Analyse de données visuelles et flux vidéo.</p>
               </div>
             </div>
 
             <div class="fact-card">
               <span class="fact-number">04</span>
               <div>
-                <strong>Software Engineering</strong>
-                <p>Conception et intégration de solutions applicatives.</p>
+                <strong data-i18n="about.fact4.title">Software Engineering</strong>
+                <p data-i18n="about.fact4.desc">Conception et intégration de solutions applicatives.</p>
               </div>
             </div>
 
@@ -358,14 +347,14 @@
 
         <div class="section-heading reveal">
 
-          <p class="eyebrow">02 — PROJETS & EXPÉRIENCES</p>
+          <p class="eyebrow" data-i18n="projects.eyebrow">02 — PROJETS & EXPÉRIENCES</p>
 
-          <h2>
+          <h2 data-i18n-html="projects.title">
             Des problématiques concrètes,
             <span class="gradient-text">des solutions intelligentes.</span>
           </h2>
 
-          <p>
+          <p data-i18n="projects.subtitle">
             De la vision par ordinateur à la modélisation prédictive,
             chaque expérience m'a permis de travailler sur une étape
             différente de la chaîne de valeur de la donnée.
@@ -388,33 +377,33 @@
 
               <div>
 
-                <div class="project-type">
+                <div class="project-type" data-i18n="project1.type">
                   VISION PAR ORDINATEUR · DEEP LEARNING
                 </div>
 
-                <h3>
+                <h3 data-i18n="project1.title">
                   Solution IA de détection précoce
                   des chutes et malaises
                 </h3>
 
-                <p class="project-company">
+                <p class="project-company" data-i18n="project1.company">
                   Établissement hospitalier privé LA COLOMBE · Stage
                 </p>
 
-                <p class="project-date">
+                <p class="project-date" data-i18n="project1.date">
                   févr. 2026 — juil. 2026 · 6 mois · Hybride
                 </p>
 
               </div>
 
-              <div class="project-badge">
+              <div class="project-badge" data-i18n="project1.badge">
                 STAGE
               </div>
 
             </div>
 
 
-            <p class="project-intro">
+            <p class="project-intro" data-i18n="project1.intro">
               Conception et développement d'une solution intelligente
               destinée à détecter précocement des situations potentiellement
               à risque à partir de flux vidéo capturant uniquement le
@@ -426,9 +415,9 @@
 
               <div class="detail-column">
 
-                <h4>Mission</h4>
+                <h4 data-i18n="project1.mission.title">Mission</h4>
 
-                <p>
+                <p data-i18n="project1.mission.desc">
                   Développer une approche combinant vision par ordinateur
                   et Deep Learning afin d'analyser les mouvements et les
                   comportements d'une personne.
@@ -438,14 +427,14 @@
 
               <div class="detail-column">
 
-                <h4>Travaux réalisés</h4>
+                <h4 data-i18n="project1.work.title">Travaux réalisés</h4>
 
                 <ul>
-                  <li>Mise en place d'un pipeline de traitement vidéo.</li>
-                  <li>Analyse des mouvements et comportements.</li>
-                  <li>Détection de déséquilibres et événements anormaux.</li>
-                  <li>Évaluation du risque de chute ou de malaise.</li>
-                  <li>Expérimentation et évaluation des performances.</li>
+                  <li data-i18n="project1.work.1">Mise en place d'un pipeline de traitement vidéo.</li>
+                  <li data-i18n="project1.work.2">Analyse des mouvements et comportements.</li>
+                  <li data-i18n="project1.work.3">Détection de déséquilibres et événements anormaux.</li>
+                  <li data-i18n="project1.work.4">Évaluation du risque de chute ou de malaise.</li>
+                  <li data-i18n="project1.work.5">Expérimentation et évaluation des performances.</li>
                 </ul>
 
               </div>
@@ -510,7 +499,7 @@
 
               <div class="risk-indicator">
                 <span class="risk-dot"></span>
-                Analyse comportementale
+                <span data-i18n="project1.visual.analysis">Analyse comportementale</span>
               </div>
 
             </div>
@@ -539,33 +528,33 @@
 
               <div>
 
-                <div class="project-type">
+                <div class="project-type" data-i18n="project2.type">
                   DATA SCIENCE · MODÉLISATION PRÉDICTIVE
                 </div>
 
-                <h3>
+                <h3 data-i18n="project2.title">
                   Système d'aide à la décision
                   pour la prévention des incendies
                 </h3>
 
-                <p class="project-company">
+                <p class="project-company" data-i18n="project2.company">
                   Direction Générale des Forêts (DGF) · Stage
                 </p>
 
-                <p class="project-date">
+                <p class="project-date" data-i18n="project2.date">
                   sept. 2025 — janv. 2026 · 5 mois
                 </p>
 
               </div>
 
-              <div class="project-badge">
+              <div class="project-badge" data-i18n="project2.badge">
                 STAGE
               </div>
 
             </div>
 
 
-            <p class="project-intro">
+            <p class="project-intro" data-i18n="project2.intro">
               Conception d'une solution prédictive destinée à améliorer
               la prévention des risques d'incendie et à faciliter la
               priorisation des interventions préventives.
@@ -576,9 +565,9 @@
 
               <div class="detail-column">
 
-                <h4>Mission</h4>
+                <h4 data-i18n="project2.mission.title">Mission</h4>
 
-                <p>
+                <p data-i18n="project2.mission.desc">
                   Exploiter des données géospatiales et environnementales
                   afin d'identifier les facteurs associés au risque
                   d'incendie et produire des indicateurs permettant
@@ -589,16 +578,16 @@
 
               <div class="detail-column">
 
-                <h4>Travaux réalisés</h4>
+                <h4 data-i18n="project2.work.title">Travaux réalisés</h4>
 
                 <ul>
-                  <li>Collecte et préparation de données géospatiales.</li>
-                  <li>Analyse de données environnementales.</li>
-                  <li>Identification des principaux facteurs de risque.</li>
-                  <li>Modélisation prédictive du niveau de risque.</li>
-                  <li>Cartographie des zones sensibles.</li>
-                  <li>Priorisation des interventions préventives.</li>
-                  <li>Analyse et interprétation des résultats.</li>
+                  <li data-i18n="project2.work.1">Collecte et préparation de données géospatiales.</li>
+                  <li data-i18n="project2.work.2">Analyse de données environnementales.</li>
+                  <li data-i18n="project2.work.3">Identification des principaux facteurs de risque.</li>
+                  <li data-i18n="project2.work.4">Modélisation prédictive du niveau de risque.</li>
+                  <li data-i18n="project2.work.5">Cartographie des zones sensibles.</li>
+                  <li data-i18n="project2.work.6">Priorisation des interventions préventives.</li>
+                  <li data-i18n="project2.work.7">Analyse et interprétation des résultats.</li>
                 </ul>
 
               </div>
@@ -643,7 +632,7 @@
 
               <div class="map-legend">
                 <span></span>
-                Zones à risque
+                <span data-i18n="project2.visual.risk">Zones à risque</span>
               </div>
 
             </div>
@@ -680,33 +669,33 @@
 
               <div>
 
-                <div class="project-type">
+                <div class="project-type" data-i18n="project3.type">
                   INFORMATION RETRIEVAL · NLP · MACHINE LEARNING
                 </div>
 
-                <h3>
+                <h3 data-i18n="project3.title">
                   Moteur de recherche et de classement
                   de documents
                 </h3>
 
-                <p class="project-company">
+                <p class="project-company" data-i18n="project3.company">
                   Projet personnel · Indépendant
                 </p>
 
-                <p class="project-date">
+                <p class="project-date" data-i18n="project3.date">
                   sept. 2025 — déc. 2025 · 4 mois · Hybride
                 </p>
 
               </div>
 
-              <div class="project-badge project-badge-personal">
+              <div class="project-badge project-badge-personal" data-i18n="project3.badge">
                 PROJET
               </div>
 
             </div>
 
 
-            <p class="project-intro">
+            <p class="project-intro" data-i18n="project3.intro">
               Conception et développement d'une solution intelligente
               de recherche et de classement de documents visant à améliorer
               la pertinence des résultats retournés à partir de requêtes
@@ -718,9 +707,9 @@
 
               <div class="detail-column">
 
-                <h4>Architecture</h4>
+                <h4 data-i18n="project3.architecture.title">Architecture</h4>
 
-                <p>
+                <p data-i18n="project3.architecture.desc">
                   Mise en place d'un pipeline couvrant la préparation,
                   l'indexation, la recherche et le classement des documents,
                   avec comparaison de plusieurs stratégies de retrieval
@@ -731,17 +720,17 @@
 
               <div class="detail-column">
 
-                <h4>Travaux réalisés</h4>
+                <h4 data-i18n="project3.work.title">Travaux réalisés</h4>
 
                 <ul>
-                  <li>Benchmark de stratégies BM25 et TF-IDF.</li>
-                  <li>Vector Space Model et Cosine Similarity.</li>
-                  <li>Expérimentation de LSI et modèles sémantiques.</li>
-                  <li>Comparaison de différentes approches de ranking.</li>
-                  <li>Évaluation via Precision, Recall et F1-Score.</li>
-                  <li>Utilisation de MAP, Precision@K, MRR et nDCG.</li>
-                  <li>Développement d'une interface de recherche.</li>
-                  <li>Tests sur un corpus documentaire médical.</li>
+                  <li data-i18n="project3.work.1">Benchmark de stratégies BM25 et TF-IDF.</li>
+                  <li data-i18n="project3.work.2">Vector Space Model et Cosine Similarity.</li>
+                  <li data-i18n="project3.work.3">Expérimentation de LSI et modèles sémantiques.</li>
+                  <li data-i18n="project3.work.4">Comparaison de différentes approches de ranking.</li>
+                  <li data-i18n="project3.work.5">Évaluation via Precision, Recall et F1-Score.</li>
+                  <li data-i18n="project3.work.6">Utilisation de MAP, Precision@K, MRR et nDCG.</li>
+                  <li data-i18n="project3.work.7">Développement d'une interface de recherche.</li>
+                  <li data-i18n="project3.work.8">Tests sur un corpus documentaire médical.</li>
                 </ul>
 
               </div>
@@ -770,7 +759,7 @@
 
               <div class="search-bar">
                 <span class="search-icon">⌕</span>
-                <span class="search-placeholder">
+                <span class="search-placeholder" data-i18n="project3.visual.search">
                   recherche documentaire...
                 </span>
                 <span class="search-key">⌘ K</span>
@@ -781,8 +770,8 @@
                 <div class="search-result active">
                   <span class="result-rank">01</span>
                   <div>
-                    <strong>Document médical pertinent</strong>
-                    <small>Score de pertinence élevé</small>
+                    <strong data-i18n="project3.visual.result1">Document médical pertinent</strong>
+                    <small data-i18n="project3.visual.result1.sub">Score de pertinence élevé</small>
                   </div>
                   <span class="result-score">0.94</span>
                 </div>
@@ -790,8 +779,8 @@
                 <div class="search-result">
                   <span class="result-rank">02</span>
                   <div>
-                    <strong>Analyse clinique</strong>
-                    <small>Correspondance sémantique</small>
+                    <strong data-i18n="project3.visual.result2">Analyse clinique</strong>
+                    <small data-i18n="project3.visual.result2.sub">Correspondance sémantique</small>
                   </div>
                   <span class="result-score">0.87</span>
                 </div>
@@ -799,8 +788,8 @@
                 <div class="search-result">
                   <span class="result-rank">03</span>
                   <div>
-                    <strong>Rapport documentaire</strong>
-                    <small>Similarité textuelle</small>
+                    <strong data-i18n="project3.visual.result3">Rapport documentaire</strong>
+                    <small data-i18n="project3.visual.result3.sub">Similarité textuelle</small>
                   </div>
                   <span class="result-score">0.81</span>
                 </div>
@@ -833,32 +822,32 @@
 
               <div>
 
-                <div class="project-type">
+                <div class="project-type" data-i18n="project4.type">
                   DATA SCIENCE · MACHINE LEARNING
                 </div>
 
-                <h3>
+                <h3 data-i18n="project4.title">
                   Prédiction du churn client
                 </h3>
 
-                <p class="project-company">
+                <p class="project-company" data-i18n="project4.company">
                   SARL LTMI · Stage
                 </p>
 
-                <p class="project-date">
+                <p class="project-date" data-i18n="project4.date">
                   juin 2025 — août 2025 · 3 mois · Hybride
                 </p>
 
               </div>
 
-              <div class="project-badge">
+              <div class="project-badge" data-i18n="project4.badge">
                 STAGE
               </div>
 
             </div>
 
 
-            <p class="project-intro">
+            <p class="project-intro" data-i18n="project4.intro">
               Participation au développement d'une solution de prédiction
               du churn client afin d'identifier les facteurs associés au
               départ des clients et d'apporter des éléments d'aide à
@@ -870,9 +859,9 @@
 
               <div class="detail-column">
 
-                <h4>Approche Data Science</h4>
+                <h4 data-i18n="project4.approach.title">Approche Data Science</h4>
 
-                <p>
+                <p data-i18n="project4.approach.desc">
                   Analyse du comportement client à travers la préparation
                   des données, l'analyse exploratoire, la construction
                   de variables pertinentes et l'entraînement de modèles
@@ -883,16 +872,16 @@
 
               <div class="detail-column">
 
-                <h4>Travaux réalisés</h4>
+                <h4 data-i18n="project4.work.title">Travaux réalisés</h4>
 
                 <ul>
-                  <li>Collecte et préparation des données clients.</li>
-                  <li>Analyses exploratoires et recherche de corrélations.</li>
-                  <li>Préparation des données pour le Machine Learning.</li>
-                  <li>Développement de modèles prédictifs de churn.</li>
-                  <li>Évaluation des performances des modèles.</li>
-                  <li>Identification des facteurs associés au départ.</li>
-                  <li>Restitution des résultats pour la prise de décision.</li>
+                  <li data-i18n="project4.work.1">Collecte et préparation des données clients.</li>
+                  <li data-i18n="project4.work.2">Analyses exploratoires et recherche de corrélations.</li>
+                  <li data-i18n="project4.work.3">Préparation des données pour le Machine Learning.</li>
+                  <li data-i18n="project4.work.4">Développement de modèles prédictifs de churn.</li>
+                  <li data-i18n="project4.work.5">Évaluation des performances des modèles.</li>
+                  <li data-i18n="project4.work.6">Identification des facteurs associés au départ.</li>
+                  <li data-i18n="project4.work.7">Restitution des résultats pour la prise de décision.</li>
                 </ul>
 
               </div>
@@ -990,32 +979,32 @@
 
               <div>
 
-                <div class="project-type">
+                <div class="project-type" data-i18n="project5.type">
                   FULL-STACK DEVELOPMENT · WEB
                 </div>
 
-                <h3>
+                <h3 data-i18n="project5.title">
                   Plateforme e-commerce
                 </h3>
 
-                <p class="project-company">
+                <p class="project-company" data-i18n="project5.company">
                   SARL LTMI · Stage
                 </p>
 
-                <p class="project-date">
+                <p class="project-date" data-i18n="project5.date">
                   févr. 2024 — juil. 2024 · 6 mois · Hybride
                 </p>
 
               </div>
 
-              <div class="project-badge">
+              <div class="project-badge" data-i18n="project5.badge">
                 STAGE
               </div>
 
             </div>
 
 
-            <p class="project-intro">
+            <p class="project-intro" data-i18n="project5.intro">
               Participation à la conception et au développement d'une
               plateforme e-commerce destinée à un acteur du levage
               et de la manutention.
@@ -1026,9 +1015,9 @@
 
               <div class="detail-column">
 
-                <h4>Développement</h4>
+                <h4 data-i18n="project5.dev.title">Développement</h4>
 
-                <p>
+                <p data-i18n="project5.dev.desc">
                   Contribution à la construction de l'application et
                   au développement des fonctionnalités nécessaires
                   au parcours client, depuis la consultation du catalogue
@@ -1039,17 +1028,17 @@
 
               <div class="detail-column">
 
-                <h4>Travaux réalisés</h4>
+                <h4 data-i18n="project5.work.title">Travaux réalisés</h4>
 
                 <ul>
-                  <li>Développement du catalogue produits.</li>
-                  <li>Gestion du panier et du parcours d'achat.</li>
-                  <li>Fonctionnalités d'authentification.</li>
-                  <li>Gestion des utilisateurs.</li>
-                  <li>Développement de composants front-end.</li>
-                  <li>Développement de composants back-end.</li>
-                  <li>Intégration des différents composants techniques.</li>
-                  <li>Contribution à l'expérience d'achat complète.</li>
+                  <li data-i18n="project5.work.1">Développement du catalogue produits.</li>
+                  <li data-i18n="project5.work.2">Gestion du panier et du parcours d'achat.</li>
+                  <li data-i18n="project5.work.3">Fonctionnalités d'authentification.</li>
+                  <li data-i18n="project5.work.4">Gestion des utilisateurs.</li>
+                  <li data-i18n="project5.work.5">Développement de composants front-end.</li>
+                  <li data-i18n="project5.work.6">Développement de composants back-end.</li>
+                  <li data-i18n="project5.work.7">Intégration des différents composants techniques.</li>
+                  <li data-i18n="project5.work.8">Contribution à l'expérience d'achat complète.</li>
                 </ul>
 
               </div>
@@ -1090,25 +1079,25 @@
               <div class="shop-body">
 
                 <div class="shop-title">
-                  <small>CATALOGUE PRODUITS</small>
-                  <strong>Solutions professionnelles</strong>
+                  <small data-i18n="project5.visual.catalog">CATALOGUE PRODUITS</small>
+                  <strong data-i18n="project5.visual.solutions">Solutions professionnelles</strong>
                 </div>
 
                 <div class="shop-products">
 
                   <div class="shop-product">
                     <div class="product-image"></div>
-                    <span>Produit A</span>
+                    <span data-i18n="project5.visual.productA">Produit A</span>
                   </div>
 
                   <div class="shop-product">
                     <div class="product-image product-image-two"></div>
-                    <span>Produit B</span>
+                    <span data-i18n="project5.visual.productB">Produit B</span>
                   </div>
 
                   <div class="shop-product">
                     <div class="product-image product-image-three"></div>
-                    <span>Produit C</span>
+                    <span data-i18n="project5.visual.productC">Produit C</span>
                   </div>
 
                 </div>
@@ -1141,9 +1130,9 @@
 
         <div class="section-heading reveal">
 
-          <p class="eyebrow">03 — COMPÉTENCES</p>
+          <p class="eyebrow" data-i18n="skills.eyebrow">03 — COMPÉTENCES</p>
 
-          <h2>
+          <h2 data-i18n-html="skills.title">
             Une stack pensée pour
             <span class="gradient-text">construire.</span>
           </h2>
@@ -1157,7 +1146,7 @@
 
             <div class="skill-category-number">01</div>
 
-            <h3>Data & IA</h3>
+            <h3 data-i18n="skills.cat1.title">Data & IA</h3>
 
             <div class="skill-list">
               <span>Python</span>
@@ -1175,7 +1164,7 @@
 
             <div class="skill-category-number">02</div>
 
-            <h3>Vision & NLP</h3>
+            <h3 data-i18n="skills.cat2.title">Vision & NLP</h3>
 
             <div class="skill-list">
               <span>Computer Vision</span>
@@ -1193,7 +1182,7 @@
 
             <div class="skill-category-number">03</div>
 
-            <h3>Software</h3>
+            <h3 data-i18n="skills.cat3.title">Software</h3>
 
             <div class="skill-list">
               <span>JavaScript</span>
@@ -1211,7 +1200,7 @@
 
             <div class="skill-category-number">04</div>
 
-            <h3>Approche</h3>
+            <h3 data-i18n="skills.cat4.title">Approche</h3>
 
             <div class="skill-list">
               <span>Data Preparation</span>
@@ -1245,17 +1234,17 @@
 
           <div class="contact-content">
 
-            <p class="eyebrow">
+            <p class="eyebrow" data-i18n="contact.eyebrow">
               04 — CONTACT
             </p>
 
-            <h2>
+            <h2 data-i18n-html="contact.title">
               Un projet,
               une opportunité,
               <span class="gradient-text">une discussion ?</span>
             </h2>
 
-            <p>
+            <p data-i18n="contact.subtitle">
               Vous recherchez un profil orienté Data Science,
               Machine Learning, IA ou développement de solutions
               intelligentes ? N'hésitez pas à me contacter.
@@ -1270,7 +1259,7 @@
                 <span class="contact-icon">✉</span>
 
                 <span>
-                  <small>EMAIL</small>
+                  <small data-i18n="contact.email.label">EMAIL</small>
                   <strong>salah.djss.asd@gmail.com</strong>
                 </span>
 
@@ -1288,8 +1277,8 @@
                 <span class="linkedin-big">in</span>
 
                 <span>
-                  <small>PROFIL PROFESSIONNEL</small>
-                  <strong>Voir mon profil LinkedIn</strong>
+                  <small data-i18n="contact.linkedin.label">PROFIL PROFESSIONNEL</small>
+                  <strong data-i18n="contact.linkedin.text">Voir mon profil Linkedin</strong>
                 </span>
 
                 <span class="contact-arrow">↗</span>
@@ -1332,21 +1321,22 @@
 
       <div class="footer-brand">
         <strong>Salah<span>.</span></strong>
-        <span>Data · IA · Machine Learning</span>
+        <span data-i18n="footer.role">Data · IA · Machine Learning</span>
       </div>
 
       <div class="footer-links">
 
-        <a href="#accueil">Accueil</a>
-        <a href="#projets">Projets</a>
-        <a href="#contact">Contact</a>
+        <a href="#accueil" data-i18n="footer.home">Accueil</a>
+        <a href="#projets" data-i18n="footer.projects">Projets</a>
+        <a href="#contact" data-i18n="footer.contact">Contact</a>
 
         <a
           href="https://www.linkedin.com/in/salah-djessas-51b4993a9"
           target="_blank"
           rel="noopener noreferrer"
+          data-i18n="footer.linkedin"
         >
-          LinkedIn ↗
+          Linkedin ↗
         </a>
 
       </div>
